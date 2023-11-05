@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kopi Java - Beranda</title>
+<link rel="stylesheet" href="style.css">
+<link rel ="stylesheet" href="https://googleapis.com/css2?family=Material+Symbols
++Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">Coffe<span>.</span></a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <span id="menu-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+  <section class ="hero-section">
+    <div class="content">
+      <h1>Start Your Day With Fresh Coffe</h1>
+      <p>Coffee is a popular and beloved beverage enjoyed by people arround the world</p>
+    <button>Order Now</button>
+    </div>
+  </section>
+  <script>
+    const header = document.querySelector("header");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closemenuBtn = document.querySelector("#close-menu-btn");
+
+      menuBtn.addEventListener("click",()=>{
+        header.classList.toggle("show-mobile-menu");
+      });
+
+      closemenuBtn.addEventListener("click",()=>{
+        menuBtn.click();
+      });
+
+  </script>
+  </div>
+</body>
+</html>  
